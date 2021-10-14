@@ -22,7 +22,8 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- icon tab  -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
 
     <style>
     body {
@@ -177,7 +178,7 @@
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/home">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index.php/home">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -186,21 +187,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/search_page" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="/index.php/search_page" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/search_page">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/search_page">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/search_page">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/search_page">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
 
                     </ul>
-                    <a class="nav-link" href="/register">ลงทะเบียน</a>
+                    <a class="nav-link" href="/index.php/register">ลงทะเบียน</a>
                 </div>
             </div>
         </nav>
@@ -212,7 +213,7 @@
 
         <div id="u0_div" class="container">
 
-            <a style="color:black" href="/home">
+            <a style="color:black" href="/index.php/home">
                 <div id="u235" class="ax_default label" style="cursor: pointer;">
                     <div id="u235_text" class="text ">
                         <p id="backto"><span>
@@ -236,7 +237,7 @@
                 <p><span>ไม่มีบัญชี?<a href="/register">ลงทะเบียน</a></span></p>
             </div>
 
-            <form action="/login/auth" method="post">
+            <form action="/index.php/login/auth" method="post">
                 <div id="form-row">
                     <div class="form-row">
                         <div class="form-group">

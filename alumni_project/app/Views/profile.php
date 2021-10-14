@@ -25,6 +25,8 @@ $session = session(); ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!-- icon tab  -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
     <!-- CSS -->
     <style>
     /* font/header/footer  */
@@ -279,7 +281,7 @@ $session = session(); ?>
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/index">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index.php/index">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -288,32 +290,34 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากรหัสนักศึกษา</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
 
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                             aria-labelledby="navbarDropdown">
-                            <li> <a class="dropdown-item" href="/profile">
+                            <li> <a class="dropdown-item" href="/index.php/profile">
                                     <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>" id="logout_btn">
+                            <li><a class="dropdown-item" href="<?php echo base_url('/index.php/Login/logout'); ?>"
+                                    id="logout_btn">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
                         </ul>
                     </div>
@@ -327,7 +331,7 @@ $session = session(); ?>
 
         <div id="u0_div" class="container">
 
-            <a style="color:black" href="/index">
+            <a style="color:black" href="/index.php/index">
                 <div id="u235" class="ax_default label" style="cursor: pointer;">
                     <div id="u235_text" class="text ">
                         <br>
@@ -362,7 +366,7 @@ $session = session(); ?>
                                       $stu_id = $session->get('stu_id');
                                 
                                 ?>
-                                <a href="<?php echo base_url('edit_profile/'.$stu_id);?>" id="text">
+                                <a href="<?php echo base_url('/index.php/edit_profile/'.$stu_id);?>" id="text">
                                     <!-- <a href="/show_edit" id="text"> -->
                                     <div id="u16_div">
                                         <p><span>แก้ไขข้อมูลนักศึกษา</span></p>

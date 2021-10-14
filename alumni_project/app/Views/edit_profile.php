@@ -25,6 +25,9 @@ $session = session(); ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- CSS -->
+
+    <!-- icon tab  -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_isac.png" />
     <style>
     /* font/header/footer  */
     @import 'https://fonts.googleapis.com/css?family=Kanit';
@@ -282,7 +285,7 @@ $session = session(); ?>
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark" id="bg-drak">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/index">ISAC</a>
+                <a class="navbar-brand" id="text0" href="/index.php/index">ISAC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -291,35 +294,37 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/search_page_index">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/search_page_index">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/index.php/search_page_index">จากรหัสนักศึกษา</a>
+                                </li>
                             </ul>
                         </li>
                         <!-- <li class="nav-item">
-                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
+                            <a class="nav-link" href="/index.php/profile">ข้อมูลส่วนตัว</a>
                         </li> -->
 
                     </ul>
                     <!-- ปุ่มผู้ใช้ และ logout -->
                     <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="/search_page_index" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/index.php/search_page_index" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             &nbsp;&nbsp;<?php echo $session->get('FName_eng'); ?>&nbsp;&nbsp;
 
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
                             aria-labelledby="navbarDropdown">
-                            <li> <a class="dropdown-item" href="/profile">
+                            <li> <a class="dropdown-item" href="/index.php/profile">
                                     <i class="far fa-address-card"></i>&nbsp;&nbsp;ข้อมูลส่วนตัว</a></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('Login/logout'); ?>" id="logout_btn">
+                            <li><a class="dropdown-item" href="<?php echo base_url('/index.php/Login/logout'); ?>"
+                                    id="logout_btn">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;ออกจากระบบ</a></li>
                         </ul>
                     </div>
@@ -545,7 +550,7 @@ $session = session(); ?>
                         <input type="hidden" name="stu_id" id="stu_id" value="<?php echo $users['stu_id']; ?>">
                         <button type="submit" id="submit" class="btn btn-warning"
                             onclick="submit()">อัพเดทข้อมูล</button>
-                        <a href=" /profile" class="btn btn-danger">ยกเลิก</a>
+                        <a href=" /index.php/profile" class="btn btn-danger">ยกเลิก</a>
 
                     </center>
                 </div>
