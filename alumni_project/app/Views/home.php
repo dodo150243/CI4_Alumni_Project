@@ -36,6 +36,9 @@
         left: 10px;
     }
 
+    .nav-link{
+        color: #FFFFFF;
+    }
     .navbar-brand:hover {
         color: #FFFFFF;
 
